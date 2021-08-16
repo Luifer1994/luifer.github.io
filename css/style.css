@@ -1356,6 +1356,25 @@ body.offcanvas .colorlib-nav-toggle {
     color: #333333;
 }
 
+.btn-circle.btn-xs {
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+    border-radius: 35px;
+    font-size: 20px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
 .project .desc h3 {
     font-family: "Quicksand", Arial, sans-serif;
     font-size: 16px;
