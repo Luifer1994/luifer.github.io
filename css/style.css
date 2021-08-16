@@ -1402,6 +1402,7 @@ body.offcanvas .colorlib-nav-toggle {
         -webkit-transition: 0.3s;
         -o-transition: 0.3s;
         transition: 0.3s;
+        color: white;
     }
     .project .desc h3 {
         font-style: 28px;
