@@ -77,7 +77,6 @@
                                 <a href="#" data-nav-section="experience">Experiencia</a>
                             </li>
                             <li><a href="#" data-nav-section="work">Trabajos</a></li>
-                            <li><a href="#" data-nav-section="blog">Blog</a></li>
                             <li><a href="#" data-nav-section="contact">Contacto</a></li>
                         </ul>
                     </div>
@@ -992,18 +991,18 @@
                         col-md-10 col-md-offset-1 col-md-pull-1
                         animate-box
                       " data-animate-effect="fadeInRight">
-                                        <form action="">
+                                        <form action="javascript:sendMail();">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Nombre" required/>
+                                                <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre" required/>
                                             </div>
                                             <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Email" required />
+                                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required />
                                             </div>
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Asunto" required/>
+                                                <input type="text" name="subject" id="subject" class="form-control" placeholder="Asunto" required/>
                                             </div>
                                             <div class="form-group">
-                                                <textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Mensaje" required></textarea>
+                                                <textarea name="" id="body" name="body" cols="30" rows="7" class="form-control" placeholder="Mensaje" required></textarea>
                                             </div>
                                             <div class="form-group">
                                                 <input type="submit" class="btn btn-primary btn-send-message" value="Enviar mensaje" />
@@ -1035,6 +1034,12 @@
             // Simular click
             $('#home_click').click();
         });
+    </script>
+
+    <script>
+        function sendMail() {
+            window.open('mailto:almendralesluifer@gmail.com');
+        }
     </script>
 
     <!-- jQuery Easing -->
