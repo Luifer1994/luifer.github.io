@@ -602,13 +602,13 @@
                                             <div class="default-tab">
                                                 <ul class="nav nav-tabs" role="tablist">
                                                     <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="tab" href="#home">Todos</a>
+                                                        <a class="nav-link" id="home_click" data-toggle="tab" href="#home">Todos <i class="icon-plus"></i></a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="tab" href="#backend">Back-End</a>
+                                                        <a class="nav-link" data-toggle="tab" href="#backend">Back-End <i class="icon-code"></i></a>
                                                     </li>
                                                     <li class="nav-item">
-                                                        <a class="nav-link" data-toggle="tab" href="#fullstack">Full Stack</a>
+                                                        <a class="nav-link" data-toggle="tab" href="#fullstack">Full Stack <i class="icon-flow-parallel"></i></a>
                                                     </li>
                                                 </ul>
                                                 <div class="tab-content">
@@ -1024,6 +1024,19 @@
 
     <!-- jQuery -->
     <script src="js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(e) {
+            // Cuando le dás click muestra #content
+            $('#home_click').click(function() {
+                $("#content").toggleClass("hide");
+            });
+
+            // Simular click
+            $('#home_click').click();
+        });
+    </script>
+
     <!-- jQuery Easing -->
     <script src="js/jquery.easing.1.3.js"></script>
     <!-- Bootstrap -->
